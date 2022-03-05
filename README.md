@@ -4,7 +4,7 @@ to work with linux, no COM, just ttyACMx
 and the dan stm32duino boards definition "http://dan.drown.org/stm32duino/package_STM32duino_index.json"
 
 to work change:
-NEW|OLD values every time executing in Mtu.changes.sh script, till I modify for ask valueshttp://http//dan.drown.org/stm32duino/package_STM32duino_index.json
+NEW|OLD values every time executing in Mtu.changes.sh script, till I modify for ask values-
 
 If working with another repo boards, can change destination of upload-reset and dfu-util places, for Mtu.changes.sh.
 When choosing values, recommend first ms of Mtu.detects.sh output.
