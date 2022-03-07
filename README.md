@@ -1,8 +1,8 @@
 STM32 help scripts
 Tested with "blue pill"
 [works with or without r10 changed resistor,
-actualize values to one or another]
-
+actualize values to one or another] Depend in the board we are talking, you need to press reset button to get the detect values (very simply), or mostly any board. 
+Think not live in caos resets paterns. It fix this exactly too. At the end of config with this all, forget the reset chaos.
 
 git clone
 
