@@ -1,4 +1,6 @@
-PORT="/dev/ttyACM0"
+echo Port ttyACMx <- 0,1,2
+read nb
+PORT="/dev/ttyACM"$nb
 for ((i=1;i<=50;i++)); do
 	let "DELAY = 50 * i + 1500"
 	echo "DELAY = $DELAY"
