@@ -1,13 +1,39 @@
-#modificar a -j1
+#!/bin/bash
 
-cd ~/.arduino15/packages/stm32duino/tools/stm32tools/2021.5.31/linux
+echo NEW value
+read NEw
 
-OLD="${dummy_port_fullpath} 1600"
-NEW="${dummy_port_fullpath} 1800"
-file=maple_upload
+echo Change username in sed lines of this batch  to match your own.
 
-sed -i  "s|$OLD|$NEW|g" maple_upload
 
-sudo chmod a+x maple_upload
 
+TAINE="${dummy_port_fullpath} 750"
+NEW="${dummy_port_fullpath} ${NEw}"
+file=''
+
+
+
+echo Valor anterior es: ${TAINE}. Monitorear cambio en Mtu.value.sh. Script no funcional si la  modificacion es manual.
+echo Previous value: ${TAINE}. Monitor value in Mtu.value.sh if a manual change was made.
+
+# TAINE="${dummy_port_fullpath} ${OLd}"
+NEW="${dummy_port_fullpath} ${NEw}"
+file=''
+
+
+sed -i  "s|$TAINE|$NEW|g" /home/$USER/.arduino15/packages/stm32duino/tools/stm32tools/2021.5.31/linux/maple_upload
+
+
+#export SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+export SCRIPT_DIR="$( cd -- "'$( dirname -- "${BASH_SOURCE[0]}" )'" &> /dev/null && /bin/pwd )"
+
+
+echo $SCRIPT_DIR
+
+sed -i  "s|$TAINE|$NEW|g" $SCRIPT_DIR"Mtu.changes.sh"
+
+sudo chmod a+x  "/home/$USER/.arduino15/packages/stm32duino/tools/stm32tools/2021.5.31/linux/"maple_upload
+
+sudo chmod a+x+w $SCRIPT_DIR"Mtu.changes2.sh"
 
