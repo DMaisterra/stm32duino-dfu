@@ -35,5 +35,5 @@ sed -i  "s|$TAINE|$NEW|g" $SCRIPT_DIR"Mtu.changes.sh"
 
 sudo chmod a+x  "/home/$USER/.arduino15/packages/stm32duino/tools/stm32tools/2021.5.31/linux/"maple_upload
 
-sudo chmod a+x+w $SCRIPT_DIR"Mtu.changes2.sh"
+sudo chmod a+x+w $SCRIPT_DIR"Mtu.changes.sh"
 
