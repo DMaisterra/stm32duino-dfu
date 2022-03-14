@@ -3,8 +3,6 @@
 echo NEW value
 read NEw
 
-echo Change username in sed lines of this batch  to match your own.
-
 
 
 TAINE="${dummy_port_fullpath} 1600"
