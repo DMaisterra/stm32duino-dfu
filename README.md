@@ -5,8 +5,11 @@ Tested with "blue pill"
 [works with or without r10 changed resistor,
 actualize values to one or another] Depend in the board we are talking, you need to press reset button to get the detect values (very simply), or mostly any board. 
 Think not live in caos resets paterns. It fix this exactly too. At the end of config with this all, forget the reset chaos.
+
 .o. Could be messy, in detection, pressing one time the reset button and executes detection instantanously again. <-This is goood..
+
 .o. Innstead of doble executing detetion...use it to upload sketch. In that case could upload the program raw to a wrong adress memory -> bricked.
+
 
 git clone
 
