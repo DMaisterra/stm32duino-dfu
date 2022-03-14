@@ -21,8 +21,8 @@ sudo chmod a+x+w *
 in directory,
 to work with linux, no COM, just ttyACMx ports
 
-and the dan stm32duino boards definition "http://dan.drown.org/stm32duino/package_STM32duino_index.json"
-
+The dan stm32duino boards definition "http://dan.drown.org/stm32duino/package_STM32duino_index.json"
+or the roger clark respective change.sh, installed in th way the wiki tolds.
 
 to work:
 ./Mtu.detects.sh 
