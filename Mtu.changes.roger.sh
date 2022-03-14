@@ -5,7 +5,7 @@ read NEw
 
 
 
-TAINE="${dummy_port_fullpath} 1600"
+TAINE="${dummy_port_fullpath} 750"
 NEW="${dummy_port_fullpath} ${NEw}"
 file=''
 
